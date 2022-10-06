@@ -9,9 +9,9 @@ def getHPWL(net_list, cell_list, pad_list):
     # Enter your code here to get the HPWL
     X = []
     Y = []
-    for i in range(len(pad_list)):
-        X.append(pad_list[i].coordinate[0])
-        Y.append(pad_list[i].coordinate[1])
+    for i in range(len(cell_list)):
+        X.append(cell_list[i].coordinate[0])
+        Y.append(cell_list[i].coordinate[1])
     HPWL = max(X) - min(X) + max(Y) - min(Y)
 
     return HPWL
