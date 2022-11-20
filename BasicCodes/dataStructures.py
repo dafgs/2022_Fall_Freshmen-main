@@ -16,7 +16,6 @@ class Cell:
         self.degree = int(degree)
         self.connected_nets = []
 
-
 class Pad:
     def __init__(self, pad_id, connected_net, x, y):
         self.pad_id = int(pad_id) - 1
